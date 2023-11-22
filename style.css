@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+	/* font-family: 'Comic Sans MS', cursive; */
+	margin: 0;
+	padding: 0;
+	background: url('https://i.pinimg.com/originals/c3/69/03/c36903df333678d960a2f6b3be72ba5d.png') no-repeat center center fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+  .container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.8); /* Background color with some transparency */
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 15px;
+	margin-top: 50px; /* Adjust as needed */
+	position: relative; /* Ensure the child element is positioned relative to this container */
+  }
+  .search-bar {
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	font-size: 1em;
+  }
+  .subject-button  {
+	border: none;
+	padding: 10px 20px;
+	margin: 5px 0;
+	background-color: #e0e0e0;
+	color: #333333;
+	border-radius: 10px;
+	cursor: pointer;
+	display: block;
+	width: 95%;
+	text-align: center;
+	transition: background-color 0.3s ease;
+  }
+  .class-button{
+	border: none;
+	padding: 10px 20px;
+	margin: 5px 0;
+	background-color: #e0e0e0;
+	color: #333333;
+	border-radius: 10px;
+	cursor: pointer;
+	display: block;
+	width: 100%;
+	text-align: center;
+	transition: background-color 0.3s ease;
+  }
+  .subject-button:hover, .class-button:hover {
+	background-color: #cccccc;
+  }
+  .subject-notes-container {
+	border: 1px solid #cccccc;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	display: none;
+	padding: 10px;
+  }
+  .class-note {
+	padding: 10px;
+	border-bottom: 1px solid #cccccc;
+	background-color: #f9f9f9;
+	border-radius: 10px;
+  }
+  .class-note:last-child {
+	border-bottom: none;
+  }
+  .note-title {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: 5px;
+  }
+  .note-content {
+	font-size: 1em;
+	line-height: 1.6;
+  }
+  .note-content img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  }
+
+
+
+  .weather-box {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+	left: -500;
+  }
+
+  .weather-icon img {
+	width: 50px;
+	height: 50px;
+  }
+
+  .weather-info {
+	margin-left: 10px;
+  }
+  .time-box {
+	max-width: 200px;
+	position: absolute;
+	margin-top: 7px;
+	margin-left: -260px;
+	padding: 10px;
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 10px;
+  
+	border: 1px solid #ccc;
+	border-radius: 10px;
+  }
+  .time {
+	font-family: 'Comic Sans MS', cursive;
+	font-size: 1.2em;
+	font-weight: bold;
+  }
+  .icloudx14-button {
+	margin: 0  auto;
+	padding: 20px;
+	color: #333333;
+	background-color: rgba(255, 255, 255, 0.8);
+	font-family: 'Comic Sans MS', cursive;
+	font-size: 1em;
+	width: 220px;
+	position: absolute;
+	border: none;
+	margin-top: 122px;
+	margin-left: -260px;
+	padding: 10px;
+	text-decoration: none;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+  }
+  .icloudx14-button:hover{
+	background-color: #cccccc;
+	cursor: pointer;
+  }
+  .icloudx14-button:active{
+	opacity: 0.6;
+  }
+.weatherapi-button{
+  color: #333333;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 1em;
+  width: 220px;
+  position: absolute;
+  border: none;
+  margin-top: 180px;
+  margin-left: -260px;
+  padding: 10px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+.weatherapi-button:hover{
+ background-color: #cccccc;
+  cursor: pointer;
+}
+.weatherapi-button:active{
+  opacity: 0.6;
+}
+.form{
+    width: 250px;
+    height: 330px;
+    color: #fff;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px 25px;
+    border-radius: 10px;
+}
+
+.form h1{
+    width: 220px;
+    text-align: center;
+    padding-left: 11px;
+    font-size: 35px;
+    color: #66ff00;
+    margin-bottom: 20px;
+}
+
+.form p{
+    padding-bottom: -15px;
+}
+
+.form input{
+    width: 100%;
+    height: 35px;
+    padding-top: 5px;
+    margin-bottom: 30px;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #fff;
+    outline: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.form input[type="submit"]
+{
+    width: 60%;
+    margin-left: 50px;
+    border: none;
+    height: 40px;
+    color: #000;
+    background: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.form input[type="submit"]:hover{
+    cursor: pointer;
+    background: #66ff00;
+    color: #fff;
+    font-weight: bold;
+}
