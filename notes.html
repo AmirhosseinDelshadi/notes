@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes Amir</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+  <!-- <div class="weather-box" id="weather-box">
+    <div class="weather-icon">
+      <img src="" alt="Weather Icon" id="weather-icon-img">
+    </div>
+    <div class="weather-info" id="weather-info">
+    
+    </div>
+  </div> -->
+
+  <div class="container">
+    
+    <div>
+      <a href="https://www.icloud.com/notes/0b3m71jMlm4gaes9mKjCiCLDw#X-14-GG"target="_blank"><button class="icloudx14-button" >iCloud</button></a>
+     </div>
+     <div>
+       <a href="https://api.openweathermap.org/data/2.5/weather?q=Montreal&appid=b0297b85e4f026d4f03db64c9e7825e4&units=metric"target="_blank"><button class="weatherapi-button" >Weather API</button></a>
+      </div>
+     <div class="time-box">
+       <div class="time" id="montreal-time"></div>
+     </div>
+
+    <input type="text" class="search-bar" placeholder="Search..." onkeyup="filterSubjectsAndNotes(event)">
+    
+    <div class="subject-button" onclick="toggleNotes('concept-notes')">
+      420-P14-GG CONCEPTS
+    </div>
+    <div class="subject-notes-container" id="concept-notes">
+      <button class="class-button" onclick="toggleClass('concept-class1')">IMPORTANT</button>
+      <div class="class-note" id="concept-class1">
+        <div class="note-title">DATE EXAMEN</div>
+        <div class="note-content">
+          Hola 👋
+        </div>
+        <img src="concept.jpg" alt="">
+      </div>
+      <!-- Add more class notes for concept -->
+
+    </div>
+    
+
+    <div class="subject-button" onclick="toggleNotes('application-notes')">
+      420-Q14-GG APPLICATION
+    </div>
+    <div class="subject-notes-container" id="application-notes">
+      <button class="class-button" onclick="toggleClass('application-class1')">DATE EXAMEN</button>
+      <div class="class-note" id="application-class1">
+        <div class="note-title">Class 1</div>
+        <div class="note-content">
+          Bla Bla Bla bonjour.....
+        </div>
+        <img src="application.jpg" alt="">
+      </div>
+
+      <!-- Add more class notes for application -->
+
+    </div>
+
+    <div class="subject-button" onclick="toggleNotes('systeme-notes')">
+      420-X14-GG SYSTÈMES   
+    </div>
+    <div class="subject-notes-container" id="systeme-notes">
+      <button class="class-button" onclick="toggleClass('systeme-class0')">IMPORTANT</button>
+      <div class="class-note" id="systeme-class0">
+        <div class="note-title">DATE EXAMEN</div>
+        <div class="note-content">
+          Examen Theorique : non publiée <br>
+          Examen Pratique : non publiée
+        </div>
+        <img src="systeme.jpg" alt="">
+      </div>
+
+      <button class="class-button" onclick="toggleClass('systeme-class4')">Cours 04 : Configuration avancée de windows ( partie 02 )</button>
+      <div class="class-note" id="systeme-class4">
+        <div class="note-title"></div>
+        <div class="note-content">
+          dc --> rentrer dans le fichier <br>
+          dir --> afficher les fichiers  <br>
+          • le répertoire «..» signifie répertoire parent <br>
+          • le répertoire «.» signifie répertoire courant (celui dans lequel on est situé) <br>
+          • Chemin absolu: <br>
+          • le 1er caractère est toujours le caractère « \ » <br>
+          • Chemin relatif: <br>
+          • le 1er caractère n’est jamais le caractère « \ » <br>
+        </div> 
+        <br>
+        
+        <div class="note-title">- Quatre commandes étudiées:</div>
+        <div class="note-content">
+          • md: Pour créer des répertoires <br>
+          • cd: Pour se déplacer d’un répertoire à l’autre <br>
+          • dir: Pour voir les fichiers et les sous-répertoires situés dans un répertoire donné <br>
+          • tree: Pour voir la structure arborescente des répertoires <br>
+        </div>
+        <br>
+
+        <div class="note-title">- Métacaractère:</div>
+        <div class="note-content">
+          En Windows : <br>
+          • : correspond à 0 ou plusieurs caractères <br>
+          • : correspond à 0 ou plusieurs caractères <br>
+          • ? : correspond à exactement un caractère <br>
+          • [abc] : correspond à un des caractères entre crochets (a, b ou c dans l’exemple) <br>
+          • [a-f] : correspond à un des caractères de la plage entre crochets (entre a et f
+          • dans l’exemple) <br>
+          Exemples : <br>
+          • T* : tout ce qui débute par la lettre T <br>
+          • *S : tout ce qui se termine par la lettre S <br>
+          • *R* : tout ce qui contient la lettre R <br>
+          • *T*R* : tout ce qui contient une lettre T et une lettre R après <br>
+          • A?C* : tout ce qui débute par la lettre A et dont le 3ième caractère est la lettre C <br>
+          • ???W* : tout ce qui a la lettre W comme 4ième caractère <br>
+          • *[AFJ] : tout ce qui se termine par A, F ou J <br>
+          • [0-9]*[A-Z] : tout ce qui débute par un chiffre et qui se termine par une lettre <br>  <br>
+          
+          Les métacaractères peuvent être utilisés dans la majorité des
+          commandes <br>
+          • la liste des fichiers / répertoires ... <br>
+          • dont l’extension est .txt : dir *.txt <br>
+          • dont le nom débute par TP : dir TP* <br>
+          • dont le 3ième caractère est un V et le dernier caractère est un E : dir <br>
+          • ??V*E <br>
+          • la liste des rubriques d'aide qui contient le terme « item » : help *item* <br>
+          • la liste des commandes dont le nom débute par une lettre: Get- <br>
+          • Command [A-Z]* <br> <br>
+        </div>
+
+        <div class="note-title">- Set ExecutionPolicy Unrestricted</div>
+        <div class="note-content">
+          1. Get-ExecutionPolicy --> it should give Restricted <br>
+          2. Set-ExecutionPolicy unrestricted  --> puis répondez « Oui » <br> <br>
+        </div>
+
+        <div class="note-title">- Éléments de base d’un programme PowerShell</div>
+        <div class="note-content">
+          Éléments de base d’un programme PowerShell <br>
+            • Écrire quelque-chose : Write-Host <br>
+            • Ex. Write-Host "blablabla" <br>
+            • Lire une entrée de l’utilisateur : Read-Host <br>
+            • Ex. Read-Host " Entrez votre nom : " <br>
+            • Les variables <br>
+            • Précédées d’un $, ex: « $mavariable = 1 » <br>
+            • Possibilité de définir le type lors de la déclaration : <br>
+            • [int] <br>
+            • [float] <br>
+            • [string] <br>
+            • Ex: « [int]$x = Read-Host " Entrez une nombre " <br> <br>
+        </div>
+        <img src="user1.jpg" alt="">
+      </div>
+
+      <button class="class-button" onclick="toggleClass('systeme-class5')">Cours 05 : Introduction à PowerShell</button>
+      <div class="class-note" id="systeme-class5">
+        <div class="note-title"></div>
+        <div class="note-content">
+          • ps1 commandes = Cmdlets <br>
+          • ps is on .NET Framework <br>
+          • dir & ls = alia de get-childitem <br> <br>
+          Verb/Noun/Option/Value <br>
+          get-services -name "*net*"
+
+        </div>
+      </div>
+        
+      <button class="class-button" onclick="toggleClass('systeme-class6')">Cours 06 : Les commandes en WPS et caractères génériques</button>
+      <div class="class-note" id="systeme-class6">
+        <div class="note-title"></div>
+        <div class="note-content">
+          rien de special
+          <!-- Note du cours -->
+
+        </div>
+      </div>
+
+      <button class="class-button" onclick="toggleClass('systeme-class7')">Cours 07 : </button> 
+      <div class="class-note" id="systeme-class7">
+        <div class="note-title"></div>
+        <div class="note-content">
+          rien de special
+          <!-- Note du cours -->
+
+        </div>
+      </div>
+
+      <button class="class-button" onclick="toggleClass('systeme-class8')">Séance 08: Scripts WPS</button> 
+      <div class="class-note" id="systeme-class8">
+        <div class="note-title"></div>
+        <div class="note-content">
+
+          • info : script --> pour automatiser un traitement <br>
+          • Write-Host 
+          ......
+
+        </div>
+      </div>
+
+      <button class="class-button" onclick="toggleClass('systeme-class9')">Séance 09: Chemins et Scripts WPS</button> 
+      <div class="class-note" id="systeme-class9">
+        <div class="note-title"></div>
+        <div class="note-content">
+
+          Chemins en WPS : <br>
+           Join-Path Test-Path  joindre un path --> ex: $chemin = Join-Path C:\Windows System.ini <br>
+          <br>
+           Split-Path --> séparser un path -->ex: Split-Path C:\Windows\System.ini <br>
+          • Split-Path C:\Windows\System.ini -Leaf --> le nom tout court du fichier --> System.ini<br>
+          • Split-Path C:\Windows\System.ini -Qualifier --> le lecteur  --> C:<br>
+          • Split-Path C:\Windows\System.ini -NoQualifier --> le nom absolu (sans le lecteur) --> \Windows\System.ini<br>
+          • Split-Path C:\Windows\System.ini -Parent --> le nom complet du chemin parent (c’est le défaut) --> C:\Windows<br>
+          <br>
+          - Test-Path --> Vérifier l'existence --> ex: Test-Path C:\Windows       ou       Test-Path C:\Windows -PathType Leaf<br>
+          • -PathType Container --> Vérifier si c'est un répertoire<br>
+          • -PathType Leaf --> Vérifier si c'est un fichier<br>
+          <br>
+          Structures conditionnelles: <br>
+          - if<br>
+           Syntaxe de la commande if <br>
+            if (<condition 1>) <br>
+               <bloc de commandes 1> <br>
+            elseif (<condition 2>) <br>
+                 <bloc de commandes 2> <br>
+            [...] <br>
+            else <br>
+                    <bloc de commandes n>] <br>
+            <br>
+
+            Les conditions: <br>
+            - Les opérateurs de comparaison <br>
+            • -like et -notlike ne fonctionnent que pour les chaînes de caractères <br>
+            • Non sensible à la casse <br>
+            En WPS	 |    En C#	 <br>
+            ------------------- <br>
+            -eq	          == <br>
+            -ne         	!= <br>
+            -lt         	< <br>
+            -le	          <=    <br>
+            -gt	          > <br>
+            -ge	          >= <br>
+            -like <br>
+            -notlike <br>
+            <br>
+            • sensible à la casse <br>
+            En WPS	 |     En C# <br>
+            ------------------- <br>
+            -ceq         	== <br>
+            -cne	        != <br>
+            -clt	        < <br>
+            -cle	        <=   <br> 
+            -cgt	        > <br>
+            -cge	        >= <br>
+            -clike <br>
+            -cnotlike <br>
+<br>
+            - Les opérateurs logiques : <br>
+
+En WPS	 |    En C#	<br>
+------------------- <br>
+-and	&& <br>
+-or	||                     -- seulement true si au moin un des arguments est true sinon false <br>
+-xor	^	-- seulement true si un seul des arguments est true sinon false <br>
+-not	!br <br>
+!	! <br>
+
+
+Branchement conditionnel : <br>
+-switch Syntaxe: <br>
+   switch [-regex]-wildcard |-exact][-casesensitive](<expression>) <br>
+  { <br>
+              < valeurs possibles 1 > < bloc de commandes 1 >  <br>
+              < valeurs possibles 2 > < bloc de commandes 2 > <br>
+              < valeurs possibles n > < bloc de commandes n >  <br>
+              [default < bloc de commandes n+1 > ] <br>
+  } <br>
+  <br>
+ex:  <br>
+$car = Read-Host 'Tapez un caractère'  <br>
+switch -wildcard ($car) <br>
+{ <br>
+   [0-9] { <br>
+           echo 'vous avez tapé un chiffre' <br>
+         } <br>
+   [A-Z] { <br>
+           echo 'vous avez tapé une lettre' <br>
+         } <br>
+   default { <br>
+          echo 'vous avez tapé autre chose' <br>
+          } <br>
+} <br>
+<br>
+ex:  <br>
+$car = Read-Host 'Tapez un caractère  <br>
+switch -exact -casesensitive ($car) <br>
+{ <br>
+  ‘A’ { <br>
+echo 'A majuscule' <br>
+    } <br>
+  ‘a’ { <br>
+echo 'a minuscule' <br>
+    } <br>
+} <br>
+
+        </div>
+      </div>
+
+                
+      <button class="class-button" onclick="toggleClass('systeme-ide')">IDE</button>
+      <div class="class-note" id="systeme-ide">
+        <div class="note-title">IDE</div>
+        <div class="note-content">
+            • IDE = code editor <br>
+        </div>
+        <img src="systeme.jpg" alt="">
+      </div>
+    </div>
+    
+    
+    <!-- Add more subjects and notes as needed -->
+
+  </div>
+
+  <script>
+    function toggleNotes(id) {
+      const notesContainer = document.getElementById(id);
+      notesContainer.style.display = notesContainer.style.display === 'block' ? 'none' : 'block';
+    }
+  
+    function toggleClass(classId) {
+      const classNote = document.getElementById(classId);
+      classNote.style.display = classNote.style.display === 'block' ? 'none' : 'block';
+    }
+  
+    function filterSubjectsAndNotes(event) {
+      const query = event.target.value.toLowerCase();
+      const subjects = document.querySelectorAll('.subject-button');
+      const notesContainers = document.querySelectorAll('.subject-notes-container');
+  
+      subjects.forEach((subject, index) => {
+        const subjectName = subject.innerText.toLowerCase();
+        const notesContainer = notesContainers[index];
+        const classNotes = notesContainer.querySelectorAll('.note-content');
+  
+        if (subjectName.includes(query)) {
+          subject.style.display = 'block';
+          notesContainer.style.display = 'block';
+        } else {
+          let foundMatch = false;
+          classNotes.forEach(note => {
+            const content = note.innerText.toLowerCase();
+            if (content.includes(query)) {
+              subject.style.display = 'block';
+              notesContainer.style.display = 'block';
+              foundMatch = true;
+            }
+          });
+          
+          if (!foundMatch) {
+            subject.style.display = 'none';
+            notesContainer.style.display = 'none';
+          }
+        }
+      });
+    }
+  
+    function updateTime() {
+    const montrealTimeElement = document.getElementById('montreal-time');
+    const montrealTime = new Date().toLocaleString('en-US', { timeZone: 'America/Montreal' });
+    montrealTimeElement.textContent = `Montreal Time: ${montrealTime}`;
+  }
+
+  setInterval(updateTime, 1000); // Update the time every second
+  updateTime(); // Initial call to display the time
+  </script>
+</body>
+</html>
