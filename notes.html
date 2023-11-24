@@ -323,17 +323,32 @@ echo 'a minuscule' <br>
         <img src="systeme.jpg" alt="">
       </div>
     </div>
-    <button class="class-button" onclick="toggleClass('systeme-ide')">IDE</button>
-      <div class="class-note" id="systeme-ide">
-        <div class="note-title">IDE</div>
-        <div class="note-content">
-            • IDE = code editor <br>
+    <button class="class-button" onclick="toggleClass('systeme-tableau')">Tableau</button>
+      <div class="class-note" id="systeme-tableau">
+        <div class="note-title">Tableau</div>
+        <div class="note-content"; style"margin-left: 5px">
+          • Tableau = ensemble éléments de même type <br>
+          • Placé dans un espace continue <br>
+          • Index : ('Pommes', 'Oranges')  index de Pommes = 0 <br>
+          • Vide : @() <br>
+          • Avec des valeurs: #> $fruits = @('Pommes','Oranges','fraises') <br>
+          • Afficher : #> $fruits <br>
+          • Longeur: c# --> .Length  ps1 --> .count <br>
+          • Accéder élément: $fruits[1]  ou [0,1,2,] --> 0, 1 et 2  ou  [1..3] --> tout entre 1 et 3  <br>
+          • $fruits[-1] vaut le dernier élément en ps1, -2..... <br>
+          <br>
+          • Where-Object --> pour filtrer les données ex: > Get-Command | Where-Object {$_.CommandType -eq 'cmdlet'} <br>
+          • -filter est plus vite: Where-Object -filtre '*.exe' <br>
+          • $_ --> objet courant <br>
+          • .CommandType, .Name <br>
+          • Mesure-Command {....}  --> temps à faire la command <br>
+          • Select_Object <br>
         </div>
         <img src="systeme.jpg" alt="">
       </div>
     </div>
     
-    <!-- Add more subjects and notes as needed -->
+    <!-- Add more subjects and notes -->
 
   </div>
 
